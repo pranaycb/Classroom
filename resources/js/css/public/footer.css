@@ -1,0 +1,10 @@
+.footer {
+    padding: 40px 0;
+    color: #666;
+}
+
+.footer a {
+    color: #666;
+    text-decoration: none;
+    margin-left: 24px;
+}

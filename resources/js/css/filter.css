@@ -1,0 +1,16 @@
+.dropdown .btn.dropdown-toggle {
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    min-width: 300px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    padding: 10px 5px 5px 5px;
+}
+
+.dropdown-item {
+    background: transparent;
+    color: currentColor;
+}

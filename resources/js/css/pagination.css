@@ -1,0 +1,26 @@
+.page-item {
+    margin: 0 3px;
+    padding: 0;
+}
+
+.page-item .page-link {
+    font-size: 0.95rem;
+    line-height: normal;
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px !important;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

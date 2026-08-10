@@ -1,0 +1,65 @@
+.hero-section {
+    background-color: var(--primary);
+    border-radius: 24px;
+    padding: 64px 64px 0 64px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 24px;
+    max-width: 600px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 32px;
+    max-width: 450px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 48px;
+}
+
+.hero-stats h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hero-stats p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.hero-image {
+    max-width: 470px;
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: #0d1d36;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-weight: 500;
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 40px 40px 0 40px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+}

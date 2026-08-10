@@ -1,0 +1,21 @@
+:deep(.ql-toolbar.ql-snow) {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+:deep(.ql-container.ql-snow) {
+    border: none;
+    font-size: 16px;
+}
+
+:deep(.ql-editor) {
+    padding: 15px;
+    min-height: 120px;
+}
+
+:deep(.ql-editor.ql-blank::before) {
+    font-style: normal;
+    color: #6c757d;
+}

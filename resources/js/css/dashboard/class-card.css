@@ -1,0 +1,30 @@
+.class-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.class-card-header {
+    height: 120px;
+    color: white;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.class-card-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+}

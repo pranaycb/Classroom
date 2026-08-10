@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #0d1d36 !important;
+    padding: 24px 0;
+    margin-bottom: 40px;
+}
+
+.navbar-toggler {
+    border-color: #304b75;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255,1)'%3E%3Cpath d='M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.logo {
+    max-width: 140px;
+    width: 100%;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary) !important;
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        padding: 20px 0 0 0;
+    }
+}

@@ -1,0 +1,425 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+    --primary: #568fed;
+    --primary-light: #94bdff;
+    --primary-dark: #3e71c4;
+    --secondary: #101828;
+    --accent: #FFA500;
+    --success: #17B26A;
+    --warning: #F79009;
+    --danger: #F04438;
+    --danger-light: #f0443838;
+    --background: #fff;
+    --card-bg: #fff;
+    --text-primary: #101828;
+    --text-secondary: #667085;
+    --text-muted: #98A2B3;
+    --border-color: #e4e7ec;
+    --shadow: #5690ed44;
+    --sidebar-width: 280px;
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.small {
+    font-size: 0.9rem;
+}
+
+hr {
+    opacity: 1;
+    background-color: var(--primary-transparent);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.bg-primary {
+    background: var(--primary);
+}
+
+.bg-dark {
+    background-color: rgba(41, 48, 66, 1) !important;
+}
+
+.bg-light {
+    background: #E4E7EC;
+}
+
+.bg-danger-light {
+    background: #fde1e8b4;
+}
+
+/*--------------------------------------------------------------
+# Dropdown
+--------------------------------------------------------------*/
+.dropdown-menu {
+    --bs-dropdown-link-hover-bg: #5690ed13;
+    --bs-dropdown-link-active-bg: #5690ed13;
+    --bs-dropdown-link-active-color: var(--primary);
+    --bs-dropdown-link-hover-color: var(--primary);
+    z-index: 1;
+}
+
+/*--------------------------------------------------------------
+# Avatar
+--------------------------------------------------------------*/
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.avatar-sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.avatar-lg {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+# Form Input
+--------------------------------------------------------------*/
+.form-label {
+    font-weight: 500;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--shadow);
+    box-shadow: 0 0 0 0.2rem var(--shadow);
+}
+
+.form-control {
+    border-color: var(--shadow);
+    border-radius: 10px;
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 8px 10px;
+    font-weight: 400;
+}
+
+.form-select {
+    border-color: var(--shadow);
+    box-shadow: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.input-group .form-control {
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    text-transform: uppercase
+}
+
+.btn.btn-sm {
+    font-size: 0.875rem;
+}
+
+/*--------------------------------------------------------------
+# Badge
+--------------------------------------------------------------*/
+.badge {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Card
+--------------------------------------------------------------*/
+.card {
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.card-header,
+.card-footer {
+    border-color: #ebeef4;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.card-title {
+    padding: 0 0 15px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary) !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-title span {
+    color: #899bbd;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-img-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*--------------------------------------------------------------
+# Alert
+--------------------------------------------------------------*/
+.alert-heading {
+    font-weight: 500;
+    font-size: 1.429rem;
+}
+
+/*--------------------------------------------------------------
+# Close Button
+--------------------------------------------------------------*/
+.btn-close {
+    background-size: 25%;
+}
+
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Quill editor
+--------------------------------------------------------------*/
+.ql-container {
+    font-family: "Rubik", sans-serif !important;
+    font-size: 1rem !important;
+    margin: 0px;
+    height: 150px !important;
+}
+
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: none !important;
+}
+
+.table thead th {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 0.5rem 1rem !important;
+}
+
+.table tbody th,
+.table tbody td,
+.table tfoot th,
+.table tfoot td {
+    font-size: 1rem;
+    padding: 0.7rem 1rem !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table tbody td .btn {
+    padding: 2px 6px !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+/*--------------------------------------------------------------
+# Bootstrap modal
+--------------------------------------------------------------*/
+.modal .modal-title {
+    font-size: 1.15rem;
+}
+
+.modal .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    animation: zoomIn 0.3s forwards !important;
+}
+
+/*--------------------------------------------------------------
+# Light backgrounds
+--------------------------------------------------------------*/
+.bg-primary-light {
+    background-color: #cfe2ff;
+    border-color: #cfe2ff;
+}
+
+.bg-secondary-light {
+    background-color: #e2e3e5;
+    border-color: #e2e3e5;
+}
+
+.bg-success-light {
+    background-color: #d1e7dd;
+    border-color: #d1e7dd;
+}
+
+.bg-danger-light {
+    background-color: #f8d7da;
+    border-color: #f8d7da;
+}
+
+.bg-warning-light {
+    background-color: #fff3cd;
+    border-color: #fff3cd;
+}
+
+.bg-info-light {
+    background-color: #cff4fc;
+    border-color: #cff4fc;
+}
+
+/*--------------------------------------------------------------
+# Toast notification
+--------------------------------------------------------------*/
+.toast {
+    display: block !important;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    max-width: 300px;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 1023;
+    transform: translateX(110%);
+}
+
+.toast.closing {
+    animation: toastSlideOutRight 0.5s ease-in-out forwards;
+}
+
+.toast-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toast-icon {
+    padding: 0.35rem 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.toast-message {
+    flex: 1;
+    font-size: 0.94rem;
+    color: #fff;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.toast.toast-success {
+    background: #4bbf73;
+}
+
+.toast.toast-danger {
+    background: #d9534f;
+}
+
+.toast.toast-info {
+    background: #3f80ea;
+}
+
+.toast.toast-warning {
+    background: #e5a54b;
+}
+
+/*--------------------------------------------------------------
+# Toast slidein slideout animation
+--------------------------------------------------------------*/
+@keyframes toastSlideInRight {
+    0% {
+        transform: translateX(110%);
+    }
+
+    75% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes toastSlideOutRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(110%);
+    }
+}
+
+/*--------------------------------------------------------------
+# Modal opening animation
+--------------------------------------------------------------*/
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
