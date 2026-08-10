@@ -97,6 +97,7 @@ php artisan key:generate
 
 ### 6. Run the application
 ```bash
+php artisan migrate
 composer run dev
 ```
 This will run run the application server, queue server, and vite server together. You dont need to manully run them.
