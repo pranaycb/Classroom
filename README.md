@@ -44,8 +44,8 @@ Follow these steps to get your development environment running:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/enhanced-google-classroom.git
-cd enhanced-google-classroom
+git clone https://github.com/pranaycb/classroom.git
+cd classroom
 ```
 
 ### 2. Install PHP Dependencies
