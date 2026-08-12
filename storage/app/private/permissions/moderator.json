@@ -1,0 +1,44 @@
+{
+    "announcement": {
+        "can_announce": true,
+        "update_self_announcement": true,
+        "update_teacher_announcement": false,
+        "delete_self_announcement": true,
+        "delete_teacher_announcement": false
+    },
+    "assignment": {
+        "create": true,
+        "update": true,
+        "delete": true,
+        "view_submissions": false,
+        "update_marks": false,
+        "delete_submission": false
+    },
+    "people": {
+        "view_request": true,
+        "approve_request": true,
+        "view_activities": true,
+        "remove": false,
+        "block": false
+    },
+    "class": {
+        "create": true,
+        "update": true,
+        "delete": true,
+        "join": true
+    },
+    "exam": {
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    "question": {
+        "view": true,
+        "create": true,
+        "update": true,
+        "delete": false
+    },
+    "settings": {
+        "update": false
+    }
+}
