@@ -89,15 +89,31 @@ GEMINI_API_KEY= add_your_gemini_api_key
 JAAS_APP_ID= add_your_jitsi_meet_app_id
 JAAS_API_KEY= add_your_jitsi_meet_api_key
 ```
+### 5. Generate Jitsi Meet Api Key
+Go to the ```https://jaas.8x8.vc``` and create an account and log in. Then go to the ```API Keys``` page from your dashboard and click ```Add API Key``` button. It will generate your ```app id``` and ```api key``` with public and private key files. Download the ```RSA Public Key``` and ```RSA Private Key``` files and place them inside the ```storage/app/private``` directory. Copy the app id and api key and paste in your ```.env``` file.
+![Dashboard](screenshots/apikey.png)
 
-### 5. Generate Application Key
+```bash
+JAAS_APP_ID= paste_your_jitsi_meet_app_id
+JAAS_API_KEY= paste_your_jitsi_meet_api_key
+```
+
+### 6. Generate Gemini Api Key
+Go to the ```https://aistudio.google.com``` and login to your google account. From the sidebar go to the Dashboard. You will the option to create an api key. Give your api key a name, copy the key and paste it in your ```.env``` file.
+```bash
+GEMINI_API_KEY= paste_your_gemini_api_key
+```
+
+### 7. Generate Application Key
 ```bash
 php artisan key:generate
 ```
-
-### 6. Run the application
+### 8. Migrate Database
 ```bash
 php artisan migrate
+```
+### 9. Run the application
+```bash
 composer run dev
 ```
 This will run run the application server, queue server, and vite server together. You dont need to manully run them.
